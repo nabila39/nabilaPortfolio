@@ -1,6 +1,5 @@
 <!DOCTYPE html> 
 <html lang="en"> 
-
 <head> 
 	<meta charset="UTF-8"> 
 	<meta name="viewport"
@@ -50,7 +49,6 @@
 	</header> 
     <div class="line"></div>
 
-	<!-- Main hero banner -->
 	<section id="home" class="home-class"> 
 		<div class="intro"> 
 			<div class="headings"> 
@@ -199,23 +197,23 @@
     
             if (name.trim() == '') {
                 alert('Please enter your name.');
-                return false; // Prevent form submission
+                return false; 
             }
     
             if (email.trim() == '') {
                 alert('Please enter your email.');
-                return false; // Prevent form submission
+                return false; 
             } else if (!validateEmail(email)) {
                 alert('Please enter a valid email address.');
-                return false; // Prevent form submission
+                return false;
             }
     
             if (message.trim() == '') {
                 alert('Please enter your message.');
-                return false; // Prevent form submission
+                return false; 
             }
     
-            return true; // Allow form submission
+            return true;
         }
     
         function validateEmail(email) {
