@@ -1,0 +1,195 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0"> 
+	<title>My Portfolio</title> 
+	<link rel="stylesheet"
+		href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity= 
+"sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+	<link rel="stylesheet" href="style.css"> 
+	<link rel="stylesheet" href="responsive.css"> 
+</head> 
+
+<body> 
+	<header class="header"> 
+		<nav class="navbar"> 
+			<div class="name-logo"> 
+				<h2 class="head-logo">Nabila Taha</h2> 
+			</div> 
+			<div class="hamburger" id="hamburger"> 
+                <i class="fas fa-bars hamburger-icon"></i> 
+                <i class="fas fa-times cross-icon"></i> 
+            </div> 
+			<div class="menu"> 
+				<ul class="menu-list"> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#home"> 
+							Home 
+						</a> 
+					</li> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#portfolio"> 
+							Portfolio 
+						</a> 
+					</li> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#about"> 
+							About me
+						</a> 
+					</li> 
+					<li class="menu-list-items"> 
+						<a class="links" href="#contact"> 
+							Contact Me 
+						</a> 
+					</li> 
+				</ul> 
+			</div> 
+		</nav> 
+	</header> 
+    <div class="line"></div>
+
+	<section id="home" class="home-class"> 
+		<div class="intro"> 
+			<div class="headings"> 
+				<h3 class="hello">Hello, I'm</h3> 
+				<h1 class="my-name">Nabila Taha</h1> 
+				<h3 class="info"> 
+					I am a student at <strong> <a href="https://www.birzeit.edu/en" target="_blank" >Birzeit University</a></strong>, currently in my final year, majoring in Computer Science.
+			    </h3> 
+            </div> 
+
+		</div> 
+	</section> 
+
+
+	<!-- Portfolio Section -->
+	<section class="portfolio" id="portfolio"> 
+		<div class="portfolio-heading"> 
+			<h1 class="my-heading text-center">Portfolio</h1> 
+		</div> 
+		<div class="portfolio-content"> 
+			<div class="my-row"> 
+				<div class="my-col"> 
+					<a class="small-para blue-text href="https://nabilataha.github.io/Tic-Tac-Toe/" target="_blank" > <!-- Wrap entire card content with anchor tag -->
+						<div class="my-card port-card"> 
+							<div class="image"> 
+								<img src="./Image/Tic_tac_toe.svg.png" alt="Tic Tac Toe Image"> 
+							</div> 
+							<h3 class="greet-heading blue-text">Tic Tac Toe</h3> 
+							<p class="small-para blue-text">Game</p> 
+						</div> 
+					</a> <!-- Closing anchor tag -->
+				</div> 
+				<div class="my-col"> 
+					<a class="small-para blue-text href="https://nabilataha.github.io/Tic-Tac-Toe/" target="_blank" > <!-- Wrap entire card content with anchor tag -->
+						<div class="my-card port-card"> 
+							<div class="image"> 
+								<img src="./Image/football.jpeg" alt="Football website Image"> 
+							</div> 
+							<h3 class="greet-heading blue-text">Football Website</h3> 
+							<p class="small-para blue-text">Web Development</p> 
+						</div> 
+					</a> <!-- Closing anchor tag -->
+				</div> 
+				<div class="my-col"> 
+					<a class="small-para blue-text href="https://nabilataha.github.io/Tic-Tac-Toe/" target="_blank"> <!-- Wrap entire card content with anchor tag -->
+						<div class="my-card port-card"> 
+							<div class="image"> 
+								<img src="./Image/converter.png" alt="converter Image"> 
+							</div> 
+							<h3 class="greet-heading blue-text">Converter App</h3> 
+							<p class="small-para blue-text">Android app</p> 
+						</div> 
+					</a> <!-- Closing anchor tag -->
+				</div> 
+			</div> 
+		</div> 
+	</section> 
+	
+
+	<!-- About Section -->
+	<section id="about" class="about"> 
+		<div class="about-text"> 
+			<h1 class="my-heading">About Me</h1> 
+			<p class="lead-para"> 
+		Hello! I'm Nabila Taha, an enthusiastic newbie in the field of web development. As I begin this journey, I am excited to learn and explore the vast world of programming and design.</p>
+        <p>My web development journey began with a curiosity to understand how websites are built and evolved into a passion for creating engaging, user-friendly experiences on the web.</p>
+        <p>I am currently studying Computer Science at Birzeit University, where I gained a solid foundation in programming languages such as HTML, CSS, and JavaScript. I'm excited to apply my knowledge to real-life projects and continue expanding my skill set.</p>
+        <p>Apart from programming, I enjoy my time by practicing my favorite hobbies, which are swimming and drawing. I believe in continuous learning and strive to grow personally and professionally every day.</p>
+		</div> 
+		<div class="about-image"> 
+			<img src="./Image/nabila.jpg" alt="About Image"> 
+		</div> 
+	</section>
+	<!-- Contact me section -->
+	<section class="contact" id="contact"> 
+		<div class="contact-heading"> 
+			<h1 class="my-heading text-center">Contact Me</h1> 
+		</div> 
+		<div class="contact-content"> 
+			<div class="contact-form-container"> 
+				<h1 class="greet-heading">Get In Touch</h1> 
+				<form class="contact-form" onsubmit="return validateForm()"> 
+					<input class="form-controls" id = "name" type="text"
+						placeholder="Your Name"> 
+					<input class="form-controls" id = "email" type="text"
+						placeholder="Your Email"> 
+					<textarea class="form-controls"
+							placeholder="Write your message"
+							name="message" id="message" cols="30"
+							rows="10"> 
+					</textarea> 
+					<span id="error-message" class="error-message"></span><br>
+					<input class="form-btn btn common-btn"
+						type="submit" value="Send Message"> 
+				</form> 
+			</div> 
+			<div class="contact-details"> 
+				<h1 class="greet-heading">My Contact Details</h1> 
+				<div class="details"> 
+					<h5 class="contact-heading">Email</h5> 
+					<p class="contact-text">nabilaothman2468@gmail.com</p> 
+				</div> 
+                <div class="details"> 
+					<h5 class="contact-heading">Linkedin</h5> 
+					<p class="contact-text"><a href="https://www.linkedin.com/in/nabila-othman-581543255/" target="_blank">Linkedin</a></p> 
+				</div> 
+		
+			</div> 
+		</div> 
+	</section> 
+
+
+	<!-- Footer section -->
+	<footer class="footer"> 
+		<div class="footer-content text-center"> 
+            <h4> 
+                Copyright © 2024 All rights reserved.
+            </h4> 
+			<div class="social-links"> 
+				<div class="footer-menu"> 
+					<ul class="footer-menu-list"> 
+						<li class="footer-list-items"> 
+							<a class="footer-links" href="https://www.facebook.com/profile.php?id=100013951992532" target="_blank"> 
+								<i class="fab fa-facebook-f"></i> 
+							</a> 
+						</li> 
+						<li class="footer-list-items"> 
+							<a class="footer-links" href="https://www.linkedin.com/in/nabila-othman-581543255/" target="_blank"> 
+								<i class="fab fa-linkedin-in"></i> 
+							</a> 
+						</li> 
+					</ul> 
+				</div> 
+			</div> 
+		</div> 
+	</footer> 
+	<script src="script.js"></script> 
+</body> 
+
+</html>
